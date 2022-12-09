@@ -240,7 +240,7 @@
                                     @if($transactions->count() >0 )
                                         @foreach($transactions as $trans)
                                             <tr>
-                                                <td style="width: 2% !important">{{$usr->code}}</td>
+                                                <td style="width: 2% !important">{{$usr->code??""}}</td>
                                                 <td class="ammt" style="width: 5% !important"><b>$</b>{{$trans->amount}}</td>
                                                 <td>
                                                     @if ($trans->description == "Level commission income received for joining in network")

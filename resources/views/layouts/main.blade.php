@@ -15,37 +15,32 @@ $google_analytics=\App\User::google_analytics_code();
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="description" content="@@page-discription">
         <!-- Fav Icon  -->
-        <link rel="shortcut icon" href="{{ asset('public/admin_assets/images/favicon2.ico') }}?v=2">
+        <link rel="shortcut icon" href="{{ asset('admin_assets/images/favicon2.ico') }}?v=2">
         <!-- CSRF Token -->
         <meta name="csrf-token" content="{{ csrf_token() }}" />
         <!-- Page Title  -->
         <title>MAFAMA.COM</title>
-        <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
-        <!-- WEB FONTS : use %7C instead of | (pipe) -->
-        <!--<link href="{{ asset('https://fonts.googleapis.com/css?family=Open+Sans:300,400%7CRaleway:300,400,500,600,700%7CLato:300,400,400italic,600,700" rel="stylesheet" type="text/css" />-->
         <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather" />
-        <!-- CORE CSS -->
-        <!-- <link href="<?php echo asset('css/app.css'); ?>" rel="stylesheet"> -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/solid.min.css" integrity="sha512-xIEmv/u9DeZZRfvRS06QVP2C97Hs5i0ePXDooLa5ZPla3jOgPT/w6CzoSMPuRiumP7A/xhnUBxRmgWWwU26ZeQ==" crossorigin="anonymous" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/solid.min.js" integrity="sha512-tmaD3q45JFEAXSixAxEo5p9K8ocD26I5zy42OQ5p7ZwnIx/JaGicXVHNawlZiZTHAU7jBNTl5XyZ8IcGwPG7gQ==" crossorigin="anonymous"></script>
-        <link href="<?php echo asset('public/assets/plugins/bootstrap/css/bootstrap.min.css'); ?>" rel="stylesheet" type="text/css" />
+        <link href="{{asset('assets/plugins/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet" type="text/css" />
         <!-- REVOLUTION SLIDER -->
-        <link href="{{ asset('public/assets/plugins/slider.revolution/css/extralayers.css') }}" rel="stylesheet" type="text/css" />
-        <link href="{{ asset('public/assets/plugins/slider.revolution/css/settings.css') }}" rel="stylesheet" type="text/css" />
-        <!-- THEME CSS -->
-        <link href="{{ asset('public/assets/css/essentials.css') }}" rel="stylesheet" type="text/css" />
-        <link href="{{ asset('public/assets/css/layout.css') }}" rel="stylesheet" type="text/css" />
+        <link href="{{ asset('assets/plugins/slider.revolution/css/extralayers.css') }}" rel="stylesheet" type="text/css" />
+        <link href="{{ asset('assets/plugins/slider.revolution/css/settings.css') }}" rel="stylesheet" type="text/css" />
+
+        <link href="{{ asset('assets/css/essentials.css') }}" rel="stylesheet" type="text/css" />
+        <link href="{{ asset('assets/css/layout.css') }}" rel="stylesheet" type="text/css" />
         <!-- PAGE LEVEL SCRIPTS -->
-        <link href="{{ asset('public/assets/css/header-1.css') }}" rel="stylesheet" type="text/css" />
-        <link href="{{ asset('public/assets/css/color_scheme/green.css') }}" rel="stylesheet" type="text/css" id="color_scheme" />
-        <link href="{{ asset('public/assets/css/layout-datatables.css') }}" rel="stylesheet" type="text/css" />
-        <link href="{{ asset('public/custom.css') }}" rel="stylesheet" type="text/css" />
-        <link rel="stylesheet" href="{{ asset('public/fullcalendar/fullcalendar.min.css') }}">
-        <link rel="stylesheet" href="{{ asset('public/fullcalendar/fullcalendar.print.css') }}" media="print">
+        <link href="{{ asset('assets/css/header-1.css') }}" rel="stylesheet" type="text/css" />
+        <link href="{{ asset('assets/css/color_scheme/green.css') }}" rel="stylesheet" type="text/css" id="color_scheme" />
+        <link href="{{ asset('assets/css/layout-datatables.css') }}" rel="stylesheet" type="text/css" />
+        <link href="{{ asset('custom.css') }}" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="{{ asset('fullcalendar/fullcalendar.min.css') }}">
+        <link rel="stylesheet" href="{{ asset('fullcalendar/fullcalendar.print.css') }}" media="print">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css" integrity="sha512-mSYUmp1HYZDFaVKK//63EcZq4iFWFjxSL+Z3T/aCt4IO9Cejm03q3NKKYN6pFQzY0SBOr8h+eCIAZHPXcpZaNw==" crossorigin="anonymous" />
-        <link rel="stylesheet" href="{{ asset('public/admin_assets/css/bootstrap-formhelpers.min.css') }}">
-        <link href="{{ asset('public/assets/sweetalert2/sweetalert2.min.css') }}" rel="stylesheet" type="text/css" />
-         <link href="{{ asset('public/assets/toastr/toastr.css') }}" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="{{ asset('admin_assets/css/bootstrap-formhelpers.min.css') }}">
+        <link href="{{ asset('assets/sweetalert2/sweetalert2.min.css') }}" rel="stylesheet" type="text/css" />
+         <link href="{{ asset('assets/toastr/toastr.css') }}" rel="stylesheet" type="text/css" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
@@ -252,7 +247,7 @@ nav-tabs.nav-alternate>li.active>a {
   top: 50%;
   left: 50%;
   margin: -25px 0 0 -25px;">
-          <img src="{{ asset('public/images/loader.gif') }}">
+          <img src="{{ asset('images/loader.gif') }}">
         </div>
         <!-- wrapper -->
         <div id="wrapper">
@@ -265,20 +260,20 @@ nav-tabs.nav-alternate>li.active>a {
                             <!-- left -->
                             <!--<ul class="top-links list-inline">
                         <li>
-                            <a class="dropdown-toggle no-text-underline" data-toggle="dropdown" href="#"><img class="flag-lang" src="{{ asset('public/assets/images/flags/us.png') }}" width="16" height="11" alt="lang" /> ENGLISH</a>
+                            <a class="dropdown-toggle no-text-underline" data-toggle="dropdown" href="#"><img class="flag-lang" src="{{ asset('assets/images/flags/us.png') }}" width="16" height="11" alt="lang" /> ENGLISH</a>
                             <ul class="dropdown-langs dropdown-menu">
-                                <li><a tabindex="-1" href="#"><img class="flag-lang" src="{{ asset('public/assets/images/flags/us.png') }}" width="16" height="11" alt="lang" /> ENGLISH</a></li>
+                                <li><a tabindex="-1" href="#"><img class="flag-lang" src="{{ asset('assets/images/flags/us.png') }}" width="16" height="11" alt="lang" /> ENGLISH</a></li>
                                 <li class="divider"></li>
-                                <li><a tabindex="-1" href="#"><img class="flag-lang" src="{{ asset('public/assets/images/flags/de.png') }}" width="16" height="11" alt="lang" /> GERMAN</a></li>
-                                <li><a tabindex="-1" href="#"><img class="flag-lang" src="{{ asset('public/assets/images/flags/ru.png') }}" width="16" height="11" alt="lang" /> RUSSIAN</a></li>
-                                <li><a tabindex="-1" href="#"><img class="flag-lang" src="{{ asset('public/assets/images/flags/it.png') }}" width="16" height="11" alt="lang" /> ITALIAN</a></li>
+                                <li><a tabindex="-1" href="#"><img class="flag-lang" src="{{ asset('assets/images/flags/de.png') }}" width="16" height="11" alt="lang" /> GERMAN</a></li>
+                                <li><a tabindex="-1" href="#"><img class="flag-lang" src="{{ asset('assets/images/flags/ru.png') }}" width="16" height="11" alt="lang" /> RUSSIAN</a></li>
+                                <li><a tabindex="-1" href="#"><img class="flag-lang" src="{{ asset('assets/images/flags/it.png') }}" width="16" height="11" alt="lang" /> ITALIAN</a></li>
                             </ul>
                         </li>
                     </ul>-->
                             <ul class="top-links list-inline">
                                 <li>
                                     <a class="logo" href="{{ url('/') }}">
-                                        <img src="{{ asset('public/images/logo1.jpg') }}" alt="" />
+                                        <img src="{{ asset('images/logo1.jpg') }}" alt="" />
                                     </a>
                                 </li>
                                 <li>
@@ -418,14 +413,14 @@ nav-tabs.nav-alternate>li.active>a {
                         <div style="">
                             <div style="margin: auto;">
                                  <video width="100%" controls>
-                                 <source src="<?php echo asset("public/videos") ?>/<?= $top_videos[0]->video ?>" type="video/mp4">
+                                 <source src="<?php echo asset("videos") ?>/<?= $top_videos[0]->video ?>" type="video/mp4">
                                 </video>
                             </div>
 
 
 
                         </div>
-                        <!-- <iframe width="100%" height="260px" src="<?php //echo asset("public/videos") ?>/<?= $top_videos[0]->video ?>" style="border-radius: 10px"></iframe> -->
+                        <!-- <iframe width="100%" height="260px" src="<?php //echo asset("videos") ?>/<?= $top_videos[0]->video ?>" style="border-radius: 10px"></iframe> -->
                     </div>
                     <div class="col-md-6 padding-0">
                         <div class="owl-carousel nomargin" data-plugin-options='{"items":1, "singleItem": false, "autoPlay": true, "autoPlay": <?= $slidetime[0]->playtime ?>, "pagination": false}' style="padding: 0 5px;">
@@ -433,7 +428,7 @@ nav-tabs.nav-alternate>li.active>a {
                                 foreach ($top_banners as $banner) {
                             ?>
                                     <div>
-                                        <img class="img-responsive" src="<?php echo asset("public/images") ?>/<?= $banner->image ?>" alt="" />
+                                        <img class="img-responsive" src="<?php echo asset("images") ?>/<?= $banner->image ?>" alt="" />
                                     </div>
                             <?php
                                 }
@@ -483,11 +478,11 @@ nav-tabs.nav-alternate>li.active>a {
                         <div style="">
                             <div style="margin: auto;">
                                 <video width="100%" controls>
-                                  <source src="<?php echo asset("public/videos") ?>/<?= $top_videos[1]->video ?>" type="video/mp4">
+                                  <source src="<?php echo asset("videos") ?>/<?= $top_videos[1]->video ?>" type="video/mp4">
                                 </video>
                             </div>
                         </div>
-                        <!-- <iframe width="100%" height="260px" src="<?php //echo asset("public/videos") ?>/<?= $top_videos[1]->video ?>" style="border-radius: 10px"></iframe> -->
+                        <!-- <iframe width="100%" height="260px" src="<?php //echo asset("videos") ?>/<?= $top_videos[1]->video ?>" style="border-radius: 10px"></iframe> -->
                     </div>
                 </div>
             <?php
@@ -509,7 +504,7 @@ nav-tabs.nav-alternate>li.active>a {
                                     foreach ($top_banners as $banner) {
                                 ?>
                                         <div>
-                                            <img class="img-responsive" src="<?php echo asset("public/images") ?>/<?= $banner->image ?>" alt="" style="height: 200px" />
+                                            <img class="img-responsive" src="<?php echo asset("images") ?>/<?= $banner->image ?>" alt="" style="height: 200px" />
                                         </div>
                                 <?php
                                     }
@@ -524,7 +519,7 @@ nav-tabs.nav-alternate>li.active>a {
                                     foreach ($top_banners as $banner) {
                                 ?>
                                         <div>
-                                            <img class="img-responsive" src="<?php echo asset("public/images") ?>/<?= $banner->image ?>" alt="" style="height: 200px" />
+                                            <img class="img-responsive" src="<?php echo asset("images") ?>/<?= $banner->image ?>" alt="" style="height: 200px" />
                                         </div>
                                 <?php
                                     }
@@ -537,7 +532,7 @@ nav-tabs.nav-alternate>li.active>a {
                                     foreach ($top_banners as $banner) {
                                 ?>
                                         <div>
-                                            <img class="img-responsive" src="<?php echo asset("public/images") ?>/<?= $banner->image ?>" alt="" style="height: 200px" />
+                                            <img class="img-responsive" src="<?php echo asset("images") ?>/<?= $banner->image ?>" alt="" style="height: 200px" />
                                         </div>
                         <?php
                             }}
@@ -578,7 +573,7 @@ nav-tabs.nav-alternate>li.active>a {
                         </button>
                         <!-- Logo -->
                         <!--<a class="logo pull-left" href="{{ url('/') }}">
-                            <img src="{{ asset('public/images/logo1.jpg') }}" alt="" />
+                            <img src="{{ asset('images/logo1.jpg') }}" alt="" />
                         </a>-->
                         <!--
                             Top Nav
@@ -2823,32 +2818,32 @@ nav-tabs.nav-alternate>li.active>a {
         <!-- /PRELOADER -->
         <!-- JAVASCRIPT FILES -->
         <script type="text/javascript">
-            var plugin_path = "<?= url('/') ?>/public/assets/plugins/";
+            var plugin_path = "<?= url('/') ?>/assets/plugins/";
         </script>
-<script  src="{{ asset('public/assets/plugins/jquery/jquery-2.1.4.min.js') }}"></script>
+<script  src="{{ asset('assets/plugins/jquery/jquery-2.1.4.min.js') }}"></script>
 <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
 <!-- <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script> -->
-        <script type="text/javascript" src="{{ asset('public/assets/js/scripts.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('assets/js/scripts.js') }}"></script>
         <!-- REVOLUTION SLIDER -->
-        <script type="text/javascript" src="{{ asset('public/assets/plugins/slider.revolution/js/jquery.themepunch.tools.min.js') }}"></script>
-        <script type="text/javascript" src="{{ asset('public/assets/plugins/slider.revolution/js/jquery.themepunch.revolution.min.js') }}"></script>
-        <script type="text/javascript" src="{{ asset('public/assets/js/view/demo.revolution_slider.js') }}"></script>
-        <script type="text/javascript" src="{{ asset('public/assets/plugins/datatables/js/jquery.dataTables.min.js') }}"></script>
-        <script type="text/javascript" src="{{ asset('public/assets/plugins/datatables/js/dataTables.tableTools.min.js') }}"></script>
-        <script type="text/javascript" src="{{ asset('public/assets/plugins/datatables/js/dataTables.colReorder.min.js') }}"></script>
-        <script type="text/javascript" src="{{ asset('public/assets/plugins/datatables/js/dataTables.scroller.min.js') }}"></script>
-        <script type="text/javascript" src="{{ asset('public/assets/plugins/datatables/dataTables.bootstrap.js') }}"></script>
-        <script src="{{ asset('public/fullcalendar/fullcalendar.min.js') }}"></script>
-        <script type="text/javascript" src="{{ asset('public/assets/plugins/select2/js/select2.full.min.js') }}"></script>
-        <script src="{{ asset ('public/admin_assets/js/bootstrap-formhelpers.min.js') }}"></script>
-        <script src="{{ asset('public/assets/sweetalert2/sweetalert2.all.min.js')  }}" defer></script>
-         <script src="{{ asset('public/assets/toastr/toastr.js')  }}" defer></script>
-         <script type="text/javascript" src="{{ asset('public/includes/common.js') }}" defer></script>
+        <script type="text/javascript" src="{{ asset('assets/plugins/slider.revolution/js/jquery.themepunch.tools.min.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('assets/plugins/slider.revolution/js/jquery.themepunch.revolution.min.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('assets/js/view/demo.revolution_slider.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('assets/plugins/datatables/js/jquery.dataTables.min.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('assets/plugins/datatables/js/dataTables.tableTools.min.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('assets/plugins/datatables/js/dataTables.colReorder.min.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('assets/plugins/datatables/js/dataTables.scroller.min.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('assets/plugins/datatables/dataTables.bootstrap.js') }}"></script>
+        <script src="{{ asset('fullcalendar/fullcalendar.min.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('assets/plugins/select2/js/select2.full.min.js') }}"></script>
+        <script src="{{ asset ('admin_assets/js/bootstrap-formhelpers.min.js') }}"></script>
+        <script src="{{ asset('assets/sweetalert2/sweetalert2.all.min.js')  }}" defer></script>
+         <script src="{{ asset('assets/toastr/toastr.js')  }}" defer></script>
+         <script type="text/javascript" src="{{ asset('includes/common.js') }}" defer></script>
 
         @if(Auth::check() && Auth::user()->role=='affiliate')
-          <!--  <script type="text/javascript" src="{{ asset('public/includes/eventHandling.js') }}"></script> -->
+          <!--  <script type="text/javascript" src="{{ asset('includes/eventHandling.js') }}"></script> -->
         @endif
- <!-- <script type="text/javascript" src="{{ asset('public/includes/eventHandling.js') }}"></script> -->
+ <!-- <script type="text/javascript" src="{{ asset('includes/eventHandling.js') }}"></script> -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.10/clipboard.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js" integrity="sha512-T/tUfKSV1bihCnd+MxKD0Hm1uBBroVYBOYSk1knyvQ9VyZJpc/ALb4P0r6ubwVPSGB2GvjeoMAJJImBG12TiaQ==" crossorigin="anonymous"></script>
         <script>
