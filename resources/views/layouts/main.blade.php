@@ -310,6 +310,7 @@ nav-tabs.nav-alternate>li.active>a {
                                     </a>
                                 </div>
                             @endif
+                                <div id="google_translate_button"></div>
                             <!--<ul class="top-links list-inline text-center" style="float:none;">
                         <li>
                             <a class="no-text-underline"  href="#" style="background-color: #2b7bec;">Link1</a>
@@ -3192,11 +3193,28 @@ getLocation();
 }
 
         </script>
+            <script
+                type="text/javascript"
+                src="https://translate.google.com/translate_a/element.js?cb=googleTranslateInit"
+            ></script>
+            <script type="text/javascript">
+                function googleTranslateInit() {
+                    var data = new google.translate.TranslateElement(
+                        {
+                            pageLanguage: 'en',
+                            includedLanguages: 'en,es,fr,ar,cre,ja,ko,de,pt',
+                        },
+                        'google_translate_button'
+                    );
+                }
+                window.setInterval(function(){
+                    $('.goog-te-combo').on('change',function(){
+                        language = $("select.goog-te-combo option:selected").text();
+                        console.log(language)
+                    });
+                },5000);
 
-
-
-
-
+            </script>
         @yield('script')
     </body>
 </html>

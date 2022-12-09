@@ -10,19 +10,19 @@ $lead_menu=\App\Setting::lead_categories_menu_list();
         <meta name="description" content="@@page-discription" />
           <meta name="csrf-token" content="{{ csrf_token() }}">
         <!-- Fav Icon  -->
-        <link rel="shortcut icon" href="{{ asset('public/admin_assets/images/favicon2.ico') }}?v=2" />
+        <link rel="shortcut icon" href="{{ asset('admin_assets/images/favicon2.ico') }}?v=2" />
         <!-- Page Title  -->
         <title>MAFAMA.COM</title>
         <!-- StyleSheets  -->
-        <link rel="stylesheet" href="{{ asset('public/admin_assets/css/dashlite.css') }}?ver=1.6.0" />
-        <link id="skin-default" rel="stylesheet" href="{{ asset('public/admin_assets/css/theme.css') }}?ver=1.6.0" />
-        <link id="skin-default" rel="stylesheet" href="{{ asset('public/admin_assets/css/colorpicker.css') }}" />
+        <link rel="stylesheet" href="{{ asset('admin_assets/css/dashlite.css') }}?ver=1.6.0" />
+        <link id="skin-default" rel="stylesheet" href="{{ asset('admin_assets/css/theme.css') }}?ver=1.6.0" />
+        <link id="skin-default" rel="stylesheet" href="{{ asset('admin_assets/css/colorpicker.css') }}" />
         <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-        <link href="{{ asset('public/assets/sweetalert2/sweetalert2.min.css') }}" rel="stylesheet" type="text/css" />
-        <link href="{{ asset('public/assets/toastr/toastr.css') }}" rel="stylesheet" type="text/css" />
-        <link rel="stylesheet" href="{{ asset('public/admin_assets/css/bootstrap-formhelpers.min.css') }}">
-        {{-- <script  src="{{ asset('public/assets/plugins/jquery/jquery-2.1.4.min.js') }}"></script> --}}
+        <link href="{{ asset('assets/sweetalert2/sweetalert2.min.css') }}" rel="stylesheet" type="text/css" />
+        <link href="{{ asset('assets/toastr/toastr.css') }}" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="{{ asset('admin_assets/css/bootstrap-formhelpers.min.css') }}">
+        {{-- <script  src="{{ asset('assets/plugins/jquery/jquery-2.1.4.min.js') }}"></script> --}}
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
  <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -1195,7 +1195,7 @@ $lead_menu=\App\Setting::lead_categories_menu_list();
   top: 50%;
   left: 50%;
   margin: -25px 0 0 -25px;">
-          <img src="{{ asset('public/images/loader.gif') }}">
+          <img src="{{ asset('images/loader.gif') }}">
         </div>
         <!--<script type="text/javascript">-->
         <!--    jQuery("body").prepend('<div id="preloader">Loading...</div>');-->
@@ -1211,8 +1211,8 @@ $lead_menu=\App\Setting::lead_categories_menu_list();
                     <div class="nk-sidebar-element nk-sidebar-head">
                         <div class="nk-sidebar-brand">
                             <a href="{{ url('admin') }}" class="logo-link nk-sidebar-logo">
-                                <!--<img class="logo-light logo-img" src="{{ asset('public/admin_assets/images/logo_light.png') }}" alt="logo">
-                            <img class="logo-dark logo-img" src="{{ asset('public/admin_assets/images/logo_light.png') }}" alt="logo-dark">-->
+                                <!--<img class="logo-light logo-img" src="{{ asset('admin_assets/images/logo_light.png') }}" alt="logo">
+                            <img class="logo-dark logo-img" src="{{ asset('admin_assets/images/logo_light.png') }}" alt="logo-dark">-->
                                 <h3 style="color: #fff;">Admin</h3>
                             </a>
                         </div>
@@ -2567,8 +2567,8 @@ $lead_menu=\App\Setting::lead_categories_menu_list();
                                 </div>
                                 <div class="nk-header-brand d-xl-none">
                                     <a href="{{ url('admin') }}" class="logo-link">
-                                        <img class="logo-light logo-img" src="{{ asset('public/admin_assets/images/logo_light.png') }}" alt="logo" />
-                                        <img class="logo-dark logo-img" src="{{ asset('public/admin_assets/images/logo_light.png') }}" alt="logo-dark" />
+                                        <img class="logo-light logo-img" src="{{ asset('admin_assets/images/logo_light.png') }}" alt="logo" />
+                                        <img class="logo-dark logo-img" src="{{ asset('admin_assets/images/logo_light.png') }}" alt="logo-dark" />
                                     </a>
                                 </div>
                                 <!-- .nk-header-brand -->
@@ -2664,18 +2664,18 @@ $lead_menu=\App\Setting::lead_categories_menu_list();
         </div>
         <!-- app-root @e -->
         <!-- JavaScript -->
-        <script src="{{ asset('public/admin_assets/js/bundle.js') }}?ver=1.6.0"></script>
-        <script src="{{ asset('public/admin_assets/js/scripts.js') }}?ver=1.6.0"></script>
-        <script src="{{ asset('public/admin_assets/js/charts/gd-general.js') }}?ver=1.6.0"></script>
-        <script src="{{ asset('public/admin_assets/js/colorpicker.js') }}"></script>
-        <script src="{{ asset ('public/admin_assets/js/bootstrap-formhelpers.min.js') }}"></script>
-         <script src="{{ asset('public/assets/sweetalert2/sweetalert2.all.min.js')  }}" defer></script>
-      <script src="{{ asset('public/assets/toastr/toastr.js')  }}" defer></script>
-        <script src="{{ asset('public/genealogy/treeview.js') }}"></script>
+        <script src="{{ asset('admin_assets/js/bundle.js') }}?ver=1.6.0"></script>
+        <script src="{{ asset('admin_assets/js/scripts.js') }}?ver=1.6.0"></script>
+        <script src="{{ asset('admin_assets/js/charts/gd-general.js') }}?ver=1.6.0"></script>
+        <script src="{{ asset('admin_assets/js/colorpicker.js') }}"></script>
+        <script src="{{ asset ('admin_assets/js/bootstrap-formhelpers.min.js') }}"></script>
+         <script src="{{ asset('assets/sweetalert2/sweetalert2.all.min.js')  }}" defer></script>
+      <script src="{{ asset('assets/toastr/toastr.js')  }}" defer></script>
+        <script src="{{ asset('genealogy/treeview.js') }}"></script>
 
 
-<script type="text/javascript" src="{{ asset('public/includes/common.js') }}" defer></script>
-<script type="text/javascript" src="{{ asset('public/includes/backendscript.js') }}" defer></script>
+<script type="text/javascript" src="{{ asset('includes/common.js') }}" defer></script>
+<script type="text/javascript" src="{{ asset('includes/backendscript.js') }}" defer></script>
 
         <script>
             $(".color-td").click(function () {
